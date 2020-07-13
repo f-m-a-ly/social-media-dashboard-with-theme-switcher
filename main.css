@@ -1,0 +1,166 @@
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+.center {
+    margin: auto;
+    margin-top: 10px;
+    width: 80%;
+    padding: 10px;
+}
+
+/* -- Toggle Switch -- */ 
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+  
+  input:checked + .slider {
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  }
+
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+
+
+
+  /* -- CARDS -- */
+.card, .instagram-card-outer-div {
+    width: 14em
+  }  
+
+
+.facebook-card,
+.twitter-card,
+.instagram-card,
+.youtube-card {
+    border: hsl(222, 50%, 96%);
+    background-color: hsl(222, 50%, 96%);
+    text-align: center;
+    transition: 0.5s;
+
+}
+
+.facebook-card {
+    border-top: hsl(208, 92%, 53%) 5px solid;
+} 
+
+.twitter-card {
+    border-top: hsl(203, 89%, 53%) 5px solid;
+}
+
+.instagram-card {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+.instagram-card-outer-div {
+    /* border-top: ; */
+    background: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-radius: 5px 5px 50px 50px;
+    padding-top: 5px;
+}
+
+
+.youtube-card{
+    border-top: hsl(348, 97%, 39%) 5px solid;
+}
+
+
+.facebook-card .card-body, 
+.twitter-card .card-body,
+.instagram-card .card-body,
+.youtube-card .card-body { 
+    padding-bottom: .25rem;
+}
+    .social-media-name {
+        font-size: x-small;
+        font-weight: 700;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .followers-number {
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .followers-text {
+        font-size: small;
+    }
+
+    .followers-changes {
+        font-size: small;
+        color: hsl(163, 72%, 41%);
+        font-weight: bold;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .youtube-card .followers-changes {
+        color: hsl(356, 69%, 56%);
+    }
+
+    .facebook-card:hover,
+    .twitter-card:hover,
+    .instagram-card:hover,
+    .youtube-card:hover {
+        background-color: hsl(232, 33%, 91%);
+        cursor: pointer;
+    }
+
+
+
+
+
+
+
