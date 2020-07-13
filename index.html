@@ -1,185 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Frontend Mentor | Social Media Dashboard</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Links -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">  
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
-    <!-- Scripts -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    
-  </head>
-  <body>
-    <div class="center container">
-      <div class="row">
-        <div class="col-10">
-          <h3 class="main-title">
-            Social Media Dashboard
-          </h3>
-          <h6 class="main-title text-muted">
-            Total Followers: 23,004
-          </h6>
-        </div>
-        <div class="col-2" style="overflow: hidden; ">
-          <h6 class="main-title text-muted" style="float: left; margin-right: 5px; margin-top: 2px;">
-            Dark Mode 
-          </h6> 
-              <label class="switch" style="float: left">
-                <input type="checkbox">
-                <span class="slider round"></span>
-              </label> 
+
+<head>
+  <title>Frontend Mentor | Social Media Dashboard</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Links -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="center container">
+    <div class="row">
+      <div class="col-9">
+        <h3 class="main-title">
+          Social Media Dashboard
+        </h3>
+        <h6 class="main-title text-muted">
+          Total Followers: 23,004
+        </h6>
+      </div>
+      <div class="col-3" style="overflow: hidden; ">
+        <h6 class="main-title text-muted" style="float: left;  margin-left: 4.5em;margin-right: 15px; margin-top: 2px;">
+          Dark Mode
+        </h6>
+        <label class="switch" style="float: left;">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="facebook-card card">
+          <div class="card-body">
+            <h6 class="social-media-name text-muted">
+              <span>
+                <img src="images/icon-facebook.svg" alt="fb-logo">
+              </span> &nbsp;
+              @nathanf
+            </h6>
+            <h1 class="followers-number">
+              1987
+            </h1>
+            <p class="card-subtitle text-muted followers-text">
+              F O L L O W E R S
+            </p>
+            <h6 class="followers-changes">
+              <span>
+                <img src="images/icon-up.svg" alt="gone-up">
+              </span>
+              12 Today
+            </h6>
+          </div>
         </div>
       </div>
+      <div class="col">
+        <div class="twitter-card card">
+          <div class="card-body">
+            <h6 class="social-media-name text-muted">
+              <span>
+                <img src="images/icon-twitter.svg" alt="fb-logo">
+              </span> &nbsp;
+              @nathanf
+            </h6>
+            <h1 class="followers-number">
+              1044
+            </h1>
+            <p class="card-subtitle text-muted followers-text">
+              F O L L O W E R S
+            </p>
+            <h6 class="followers-changes">
+              <span>
+                <img src="images/icon-up.svg" alt="gone-up">
+              </span>
+              99 Today
+            </h6>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="instagram-card-outer-div">
+          <div class="instagram-card card">
+            <div class="card-body">
+              <h6 class="social-media-name text-muted">
+                <span>
+                  <img src="images/icon-instagram.svg" alt="fb-logo">
+                </span> &nbsp;
+                @realnathanf
+              </h6>
+              <h1 class="followers-number">
+                11k
+              </h1>
+              <p class="card-subtitle text-muted followers-text">
+                F O L L O W E R S
+              </p>
+              <h6 class="followers-changes">
+                <span>
+                  <img src="images/icon-up.svg" alt="gone-up">
+                </span>
+                1099 Today
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="youtube-card card">
+          <div class="card-body">
+            <h6 class="social-media-name text-muted">
+              <span>
+                <img src="images/icon-youtube.svg" alt="fb-logo">
+              </span> &nbsp;
+              Nathan F.
+            </h6>
+            <h1 class="followers-number">
+              8239
+            </h1>
+            <p class="card-subtitle text-muted followers-text">
+              S U B S C R I B E R S
+            </p>
+            <h6 class="followers-changes">
+              <span>
+                <img src="images/icon-down.svg" alt="gone-down">
+              </span>
+              144 Today
+            </h6>
+          </div>
+        </div>
+      </div>
+    </div>
 
-      <div class="row">
-        <div class="col">
-          <div class="facebook-card card">
-            <div class="card-body">     
-                <h6 class="social-media-name text-muted">
-                  <span>
-                    <img src="images/icon-facebook.svg" alt="fb-logo">
-                  </span> &nbsp;
-                  @nathanf
+    <div class="row">
+      <h4 class="overview-title text-muted" style="padding-left: 15px;">
+        Overview - Today
+      </h4>
+    </div>
+
+    <div class="row">
+      <div class="col">
+      <div class="facebook-page-views">
+        <div class="overview-card card ">
+            <div class="row">
+              <div class="col-9 ">
+                <h6 class="overview-name text-muted">
+                  Page Views &nbsp;
                 </h6>
-              <h1 class="followers-number">
-                1987
-              </h1>
-              <p class="card-subtitle text-muted followers-text">
-                F O L L O W E R S
-              </p>
-              <h6 class="followers-changes">
-                <span>
-                  <img src="images/icon-up.svg" alt="gone-up">
-                </span>
-                12 Today
-              </h6>
+              </div>
+              <div class="col-3">
+                <img src="images/icon-facebook.svg" alt="fb-logo">
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="twitter-card card">
-            <div class="card-body">     
-                <h6 class="social-media-name text-muted">
-                  <span>
-                    <img src="images/icon-twitter.svg" alt="fb-logo">
-                  </span> &nbsp;
-                  @nathanf
-                </h6>
-              <h1 class="followers-number">
-                1044
-              </h1>
-              <p class="card-subtitle text-muted followers-text">
-                F O L L O W E R S
-              </p>
-              <h6 class="followers-changes">
-                <span>
-                  <img src="images/icon-up.svg" alt="gone-up">
-                </span>
-                99 Today
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="instagram-card-outer-div">
-            <div class="instagram-card card">
-              <div class="card-body">
-                <h6 class="social-media-name text-muted">
-                  <span>
-                    <img src="images/icon-instagram.svg" alt="fb-logo">
-                  </span> &nbsp;
-                  @realnathanf
-                </h6>
-                <h1 class="followers-number">
-                  11k
-                </h1>
-                <p class="card-subtitle text-muted followers-text">
-                  F O L L O W E R S
-                </p>
-                <h6 class="followers-changes">
+            <div class="row">
+              <div class="col-8">
+                <h3 class="overview-number">
+                  87
+                </h3>
+              </div>
+              <div class="col-4">
+                <h6 class="overview-changes">
                   <span>
                     <img src="images/icon-up.svg" alt="gone-up">
                   </span>
-                  1099 Today
+                  3%
                 </h6>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="youtube-card card">
-            <div class="card-body">     
-                <h6 class="social-media-name text-muted">
-                  <span>
-                    <img src="images/icon-youtube.svg" alt="fb-logo">
-                  </span> &nbsp;
-                  Nathan F.
-                </h6>
-              <h1 class="followers-number">
-                8239
-              </h1>
-              <p class="card-subtitle text-muted followers-text">
-                S U B S C R I B E R S
-              </p>
-              <h6 class="followers-changes">
-                <span>
-                  <img src="images/icon-down.svg" alt="gone-down">
-                </span>
-                144 Today
-              </h6>
+      </div>
+
+      <div class="col">
+        <div class="facebook-likes">
+            <div class="overview-card card ">
+              <div class="row">
+                <div class="col-9 ">
+                  <h6 class="overview-name text-muted">
+                    Likes &nbsp;
+                  </h6>
+                </div>
+                <div class="col-3">
+                  <img src="images/icon-facebook.svg" alt="fb-logo">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8">
+                  <h3 class="overview-number">
+                    52
+                  </h3>
+                </div>
+                <div class="col-4">
+                  <h6 class="overview-changes">
+                    <span>
+                      <img src="images/icon-down.svg" alt="gone-down">
+                    </span>
+                    2%
+                  </h6>
+                </div>
+              </div>
             </div>
-          </div>
         </div>
       </div>
-    
-  
-      <div class="row">
-        Overview - Today
+
+      <div class="col">
+          <div class="instagram-likes">
+              <div class="overview-card card ">
+                <div class="row">
+                  <div class="col-9 ">
+                    <h6 class="overview-name text-muted">
+                      Likes &nbsp;
+                    </h6>
+                  </div>
+                  <div class="col-3">
+                    <img src="images/icon-instagram.svg" alt="ig-logo">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-7">
+                    <h3 class="overview-number">
+                      5462
+                    </h3>
+                  </div>
+                  <div class="col-5">
+                    <h6 class="overview-changes">
+                      <span>
+                        <img src="images/icon-up.svg" alt="gone-up">
+                      </span>
+                      2257%
+                    </h6>
+                  </div>
+                </div>
+              </div>
+          </div>
       </div>
-  
-    Page Views
-    87
-    3%
-  
-    Likes
-    52
-    2%
-  
-    Likes
-    5462
-    2257%
-  
-    Profile Views
-    52k
-    1375%
-  
-    Retweets
-    117
-    303%
-  
-    Likes
-    507
-    553%
-  
-    Likes
-    107
-    19%
-  
-    Total Views
-    1407
-    12%
-    
-  </div>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="col">
+          <div class="instagram-profile-views">
+            <div class="overview-card card ">
+              <div class="row">
+                <div class="col-9 ">
+                  <h6 class="overview-name text-muted">
+                    Profile Views &nbsp;
+                  </h6>
+                </div>
+                <div class="col-3">
+                  <img src="images/icon-instagram.svg" alt="ig-logo">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-7">
+                  <h3 class="overview-number">
+                    52k
+                  </h3>
+                </div>
+                <div class="col-5">
+                  <h6 class="overview-changes">
+                    <span>
+                      <img src="images/icon-up.svg" alt="gone-up">
+                    </span>
+                    1375%
+                  </h6>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
     </div>
-  </body>
+    
+    <div class="row">
+      <div class="col">
+        <div class="card">
+          Retweets
+          117
+          303%
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          Likes
+          507
+          553%
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          Likes
+          107
+          19%
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          Total Views
+          1407
+          12%
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+
 </html>

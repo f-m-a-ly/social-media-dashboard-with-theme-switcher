@@ -14,8 +14,13 @@
     padding: 10px;
 }
 
-.main-title {
+.main-title, .overview-title {
   font-weight: 700;
+}
+
+.overview-title {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 /* -- Toggle Switch -- */ 
 
@@ -80,10 +85,9 @@
 
   /* -- CARDS -- */
 .card, .instagram-card-outer-div {
-    width: 14em
-  }  
-
-
+    width: 14em;
+  } 
+  
 .facebook-card,
 .twitter-card,
 .instagram-card,
@@ -160,6 +164,59 @@
         background-color: hsl(232, 33%, 91%);
         cursor: pointer;
     }
+
+
+    /**/
+
+    .overview-card {
+      height: 7em;
+      border: hsl(222, 50%, 96%);
+      background-color: hsl(222, 50%, 96%);
+      padding: 20px;
+      transition: 0.5s;
+      margin-bottom: 1em;
+    }
+    .overview-card:hover {
+      background-color: hsl(232, 33%, 91%);
+      cursor: pointer;
+    }
+
+    .overview-name {
+      padding-top: 5px;
+      font-weight: 700;
+      font-size: small;
+    }
+
+    .overview-number {
+      padding-top: 15px;
+      font-weight: 700;
+    }
+
+    .facebook-page-views .overview-changes {
+      font-weight: 700;
+      font-size: small;
+      color: hsl(163, 72%, 41%);
+      padding-top: 2em;
+      padding-left: .5em;
+    }
+
+    .facebook-likes .overview-changes {
+      font-weight: 700;
+      font-size: small;
+      color: hsl(356, 69%, 56%);
+      padding-top: 2em;
+      padding-left: .5em;
+    }
+
+    .instagram-likes .overview-changes,
+    .instagram-profile-views .overview-changes {
+      font-weight: 700;
+      font-size: small;
+      color: hsl(163, 72%, 41%);
+      padding-top: 2em;
+      padding-left: .25em;
+    }
+
 
 
 
