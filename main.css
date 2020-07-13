@@ -80,9 +80,6 @@
     border-radius: 50%;
   }
   
-
-
-
   /* -- CARDS -- */
 .card, .instagram-card-outer-div {
     width: 14em;
@@ -216,6 +213,33 @@
       padding-top: 2em;
       padding-left: .25em;
     }
+
+    .twitter-retweets .overview-changes,
+    .twitter-likes .overview-changes {
+      font-weight: 700;
+      font-size: small;
+      color: hsl(163, 72%, 41%);
+      padding-top: 2em;
+      padding-left: .5em;
+    }
+
+    .youtube-likes .overview-changes,
+    .youtube-total-views .overview-changes {
+      font-weight: 700;
+      font-size: small;
+      color: hsl(356, 69%, 56%);
+      padding-top: 2em;
+      padding-left: 1.5em;
+    }
+
+    footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      
+   }
 
 
 
