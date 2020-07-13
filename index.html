@@ -23,13 +23,32 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
 
+    <script>
+      function DarkMode() {
+        var checkToggle = document.getElementById("toggle-switch");
+        var topCards = document.querySelector(".card");
+        var followersNumber = document.querySelector(".followers-number");
+        if (checkToggle.checked == true) {
+          console.log("toggled")
+          topCards.style.background = "hsl(228, 28%, 20%)";
+          followersNumber.style.color = "white"
+
+          }
+          else {
+            topCards.style.background = "";
+          followersNumber.style.color = "";
+
+                      console.log("untoggled") 
+          }
+      }
+    </script>
 </head>
 
 <body>
   <div class="center container">
     <div class="row">
       <div class="col-9">
-        <h3 class="main-title">
+        <h3 class="main-title" id="test">
           Social Media Dashboard
         </h3>
         <h6 class="main-title text-muted">
@@ -41,7 +60,7 @@
           Dark Mode
         </h6>
         <label class="switch" style="float: left;">
-          <input type="checkbox">
+          <input type="checkbox" id="toggle-switch" onchange="DarkMode()" aria-label="dark-mode-switch">
           <span class="slider round"></span>
         </label>
       </div>
@@ -419,5 +438,4 @@
     Coded by <a href="">Farah Aly</a>.
   </footer>
 </body>
-
 </html>
