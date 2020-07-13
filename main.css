@@ -14,6 +14,9 @@
     padding: 10px;
 }
 
+.main-title {
+  font-weight: 700;
+}
 /* -- Toggle Switch -- */ 
 
 .switch {
