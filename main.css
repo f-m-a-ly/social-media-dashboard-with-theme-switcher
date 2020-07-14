@@ -131,15 +131,22 @@
         font-size: x-small;
         font-weight: 700;
         padding-top: 1em;
+        transition: 0.5s;
         padding-bottom: 1em;
+        color: #6c757d;
+
     }
     .followers-number {
         font-weight: 700;
         margin-bottom: 0;
+        transition: 0.5s;
+        
     }
 
     .followers-text {
         font-size: small;
+        transition: 0.5s;
+        color: #6c757d;
     }
 
     .followers-changes {
@@ -182,11 +189,14 @@
       padding-top: 5px;
       font-weight: 700;
       font-size: small;
+      transition: 0.5s;
+      color: #6c757d;
     }
 
     .overview-number {
       padding-top: 15px;
       font-weight: 700;
+      transition: 0.5s;
     }
 
     .facebook-page-views .overview-changes {

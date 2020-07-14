@@ -22,26 +22,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
-    <script>
-      function DarkMode() {
-        var checkToggle = document.getElementById("toggle-switch");
-        var topCards = document.querySelector(".card");
-        var followersNumber = document.querySelector(".followers-number");
-        if (checkToggle.checked == true) {
-          console.log("toggled")
-          topCards.style.background = "hsl(228, 28%, 20%)";
-          followersNumber.style.color = "white"
-
-          }
-          else {
-            topCards.style.background = "";
-          followersNumber.style.color = "";
-
-                      console.log("untoggled") 
-          }
-      }
-    </script>
+  <script src="app.js"></script>
 </head>
 
 <body>
@@ -66,11 +47,12 @@
       </div>
     </div>
 
+    <!-- MAIN CARDS-->
     <div class="row">
       <div class="col">
-        <div class="facebook-card card">
+        <div class="main-card facebook-card card">
           <div class="card-body">
-            <h6 class="social-media-name text-muted">
+            <h6 class="social-media-name">
               <span>
                 <img src="images/icon-facebook.svg" alt="fb-logo">
               </span> &nbsp;
@@ -79,7 +61,7 @@
             <h1 class="followers-number">
               1987
             </h1>
-            <p class="card-subtitle text-muted followers-text">
+            <p class="followers-text">
               F O L L O W E R S
             </p>
             <h6 class="followers-changes">
@@ -92,9 +74,9 @@
         </div>
       </div>
       <div class="col">
-        <div class="twitter-card card">
+        <div class="main-card twitter-card card">
           <div class="card-body">
-            <h6 class="social-media-name text-muted">
+            <h6 class="social-media-name">
               <span>
                 <img src="images/icon-twitter.svg" alt="fb-logo">
               </span> &nbsp;
@@ -103,7 +85,7 @@
             <h1 class="followers-number">
               1044
             </h1>
-            <p class="card-subtitle text-muted followers-text">
+            <p class="followers-text">
               F O L L O W E R S
             </p>
             <h6 class="followers-changes">
@@ -117,9 +99,9 @@
       </div>
       <div class="col">
         <div class="instagram-card-outer-div">
-          <div class="instagram-card card">
+          <div class="main-card instagram-card card">
             <div class="card-body">
-              <h6 class="social-media-name text-muted">
+              <h6 class="social-media-name">
                 <span>
                   <img src="images/icon-instagram.svg" alt="fb-logo">
                 </span> &nbsp;
@@ -128,7 +110,7 @@
               <h1 class="followers-number">
                 11k
               </h1>
-              <p class="card-subtitle text-muted followers-text">
+              <p class="followers-text">
                 F O L L O W E R S
               </p>
               <h6 class="followers-changes">
@@ -142,9 +124,9 @@
         </div>
       </div>
       <div class="col">
-        <div class="youtube-card card">
+        <div class="main-card youtube-card card">
           <div class="card-body">
-            <h6 class="social-media-name text-muted">
+            <h6 class="social-media-name">
               <span>
                 <img src="images/icon-youtube.svg" alt="fb-logo">
               </span> &nbsp;
@@ -153,7 +135,7 @@
             <h1 class="followers-number">
               8239
             </h1>
-            <p class="card-subtitle text-muted followers-text">
+            <p class="followers-text">
               S U B S C R I B E R S
             </p>
             <h6 class="followers-changes">
@@ -167,19 +149,21 @@
       </div>
     </div>
 
+    <!-- OVERVIEW TITLE -->
     <div class="row">
       <h4 class="overview-title text-muted" style="padding-left: 15px;">
         Overview - Today
       </h4>
     </div>
 
+    <!-- OVERVIEW CARDS-->
     <div class="row">
       <div class="col">
         <div class="facebook-page-views">
           <div class="overview-card card ">
             <div class="row">
               <div class="col-9 ">
-                <h6 class="overview-name text-muted">
+                <h6 class="overview-name">
                   Page Views &nbsp;
                 </h6>
               </div>
@@ -211,7 +195,7 @@
           <div class="overview-card card ">
             <div class="row">
               <div class="col-9 ">
-                <h6 class="overview-name text-muted">
+                <h6 class="overview-name">
                   Likes &nbsp;
                 </h6>
               </div>
@@ -243,7 +227,7 @@
           <div class="overview-card card ">
             <div class="row">
               <div class="col-9 ">
-                <h6 class="overview-name text-muted">
+                <h6 class="overview-name">
                   Likes &nbsp;
                 </h6>
               </div>
@@ -275,7 +259,7 @@
           <div class="overview-card card ">
             <div class="row">
               <div class="col-9 ">
-                <h6 class="overview-name text-muted">
+                <h6 class="overview-name">
                   Profile Views &nbsp;
                 </h6>
               </div>
@@ -309,7 +293,7 @@
           <div class="overview-card card ">
             <div class="row">
               <div class="col-9 ">
-                <h6 class="overview-name text-muted">
+                <h6 class="overview-name">
                   Retweets &nbsp;
                 </h6>
               </div>
@@ -341,7 +325,7 @@
           <div class="overview-card card ">
             <div class="row">
               <div class="col-9 ">
-                <h6 class="overview-name text-muted">
+                <h6 class="overview-name">
                   Likes &nbsp;
                 </h6>
               </div>
@@ -373,7 +357,7 @@
           <div class="overview-card card ">
             <div class="row">
               <div class="col-9 ">
-                <h6 class="overview-name text-muted">
+                <h6 class="overview-name">
                   Likes &nbsp;
                 </h6>
               </div>
@@ -405,7 +389,7 @@
           <div class="overview-card card ">
             <div class="row">
               <div class="col-9 ">
-                <h6 class="overview-name text-muted">
+                <h6 class="overview-name">
                   Total Views &nbsp;
                 </h6>
               </div>
@@ -438,4 +422,10 @@
     Coded by <a href="">Farah Aly</a>.
   </footer>
 </body>
+
 </html>
+
+
+<script>
+
+</script>
