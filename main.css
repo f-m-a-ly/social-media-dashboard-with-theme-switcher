@@ -6,6 +6,9 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+body {
+  transition: 0.5s;
+}
 
 .center {
     margin: auto;
@@ -14,11 +17,26 @@
     padding: 10px;
 }
 
-.main-title, .overview-title {
+.main-title, .main-subtitle, .main-dark-subtitle, .overview-title {
+  transition: 0.5s;
   font-weight: 700;
 }
 
+.main-subtitle, .main-dark-subtitle, .overview-title {
+  transition: 0.5s;
+  color: #6c757d;
+}
+
+.main-dark-subtitle {
+  transition: 0.5s;
+  float: left;  
+  margin-left: 4.5em;
+  margin-right: 15px; 
+  margin-top: 2px;
+}
+
 .overview-title {
+  transition: 0.5s;
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -248,7 +266,7 @@
       bottom: 0;
       width: 100%;
       text-align: center;
-      
+      transition: .5s;
    }
 
 
