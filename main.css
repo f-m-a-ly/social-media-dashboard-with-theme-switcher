@@ -35,6 +35,10 @@ body {
   margin-top: 2px;
 }
 
+.switch {
+  float: left;
+}
+
 .overview-title {
   transition: 0.5s;
   margin-top: 1em;
@@ -63,6 +67,7 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
+  color: blue;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -102,6 +107,10 @@ body {
 .card, .instagram-card-outer-div {
     width: 14em;
   } 
+
+  .instagram-card-outer-div {
+    height: 2em;
+  }
   
 .facebook-card,
 .twitter-card,
@@ -269,9 +278,32 @@ body {
       transition: .5s;
    }
 
+   .breakpoint {
+     display: none;
+   }
 
 
+   @media only screen and (max-width: 1257px) {
+    .breakpoint {
+      display: inline-block;
+    }
 
+    .main-row {
+      margin: auto;
+      margin-top: 10px;
+      width: 80%;
+      padding: 10px;
+    }
+
+    .main-dark-subtitle {
+      margin-left: 0;
+  }
+
+  .switch {
+    float: right;
+  }
+
+  }
 
 
 
