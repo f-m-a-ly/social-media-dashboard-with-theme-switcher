@@ -67,7 +67,6 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  color: blue;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -86,12 +85,14 @@ body {
   
   input:checked + .slider {
     background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+ 
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+  -webkit-transform: translateX(26px);
     -ms-transform: translateX(26px);
-    transform: translateX(26px);
+  background-color: hsl(230, 17%, 14%);
   }
   
   /* Rounded sliders */
@@ -100,7 +101,7 @@ body {
   }
   
   .slider.round:before {
-    border-radius: 50%;
+  border-radius: 50%;
   }
   
   /* -- CARDS -- */
@@ -278,17 +279,17 @@ body {
       transition: .5s;
    }
 
-   .breakpoint {
+   .breakpoint-1 {
      display: none;
    }
 
 
    @media only screen and (max-width: 1257px) {
-    .breakpoint {
+    .breakpoint-1 {
       display: inline-block;
     }
 
-    .main-row {
+    .main-row, .overview-row-1, .overview-row-2 {
       margin: auto;
       margin-top: 10px;
       width: 80%;
@@ -302,6 +303,25 @@ body {
   .switch {
     float: right;
   }
+
+  footer {
+    display: none
+  }
+
+  }
+
+  @media only screen and (max-width: 850px) {
+    .instagram-card-outer-div {
+      margin-bottom: 200px;
+    }
+
+    .facebook-card {
+      margin-bottom: 20px;
+    }
+
+    footer {
+      display: none
+    }
 
   }
 
